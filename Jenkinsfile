@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh "nodejs . 2> null"
+                sh "nodejs . &"
             }
         }
     }
